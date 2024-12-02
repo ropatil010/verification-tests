@@ -688,8 +688,4 @@ Given /^I store the schedulable workers without taints in the#{OPT_SYM} clipboar
   cb_name ||= :nodes
   step %Q{I store the schedulable workers in the :#{cb_name} clipboard}
   cb.nodes = cb.nodes.reject{|w| w.taints.first}
-  logger.info "here checking !!!!!!!! #{cb.nodes[0]}"
-  logger.info "here checking !!!!!!!! #{cb.nodes[1]}"
-  logger.info "here checking !!!!!!!! #{cb.nodes[2]}"
-  logger.info "here checking !!!!!!!! #{cb.nodes[3]}"
 end 
